@@ -88,15 +88,27 @@ export class BoardService {
         const result = await this._request(`/api/boards/getBoardByUser?${query.toString()}`, "GET", null, ctx);
 
         if (result.success && Array.isArray(result.data)) {
-            return result.data.map(b => ({
+            const boards = result.data.map(b => ({
                 id: b._id,
                 name: b.boardName,
                 visibility: b.visibility,
                 taskCount: b.taskCount,
                 createdAt: b.createdAt
             }));
+
+            return {
+                content: [{
+                    type: "text",
+                    text: JSON.stringify(boards, null, 2)
+                }]
+            };
         }
-        return [];
+        return {
+            content: [{
+                type: "text",
+                text: "[]"
+            }]
+        };
     }
 
     /**
@@ -117,8 +129,13 @@ export class BoardService {
 
         const result = await this._request("/api/boards/createBoard", "POST", payload, ctx);
         return {
-            id: result.data?._id,
-            message: "Board created successfully"
+            content: [{
+                type: "text",
+                text: JSON.stringify({
+                    id: result.data?._id,
+                    message: "Board created successfully"
+                }, null, 2)
+            }]
         };
     }
 
@@ -138,8 +155,13 @@ export class BoardService {
 
         const result = await this._request("/api/boards/updateBoard", "PUT", payload, ctx);
         return {
-            message: "Board updated successfully",
-            boardId: params.boardId
+            content: [{
+                type: "text",
+                text: JSON.stringify({
+                    message: "Board updated successfully",
+                    boardId: params.boardId
+                }, null, 2)
+            }]
         };
     }
 
@@ -156,7 +178,12 @@ export class BoardService {
 
         const query = new URLSearchParams(payload).toString();
         await this._request(`/api/boards/deleteBoard?${query}`, "DELETE", null, ctx);
-        return { message: "Board deleted successfully" };
+        return {
+            content: [{
+                type: "text",
+                text: "Board deleted successfully"
+            }]
+        };
     }
 
     /**
@@ -171,7 +198,12 @@ export class BoardService {
         };
 
         await this._request("/api/boards/addMember", "POST", payload, ctx);
-        return { message: `Users assigned to board ${params.boardId}` };
+        return {
+            content: [{
+                type: "text",
+                text: `Users assigned to board ${params.boardId}`
+            }]
+        };
     }
 
     /**
@@ -189,8 +221,13 @@ export class BoardService {
 
         const result = await this._request("/api/boards/applyTemplate", "POST", payload, ctx);
         return {
-            id: result.board?._id,
-            message: "Template applied successfully"
+            content: [{
+                type: "text",
+                text: JSON.stringify({
+                    id: result.board?._id,
+                    message: "Template applied successfully"
+                }, null, 2)
+            }]
         };
     }
 }
