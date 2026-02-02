@@ -19,13 +19,23 @@ export class BoardService {
         if (!ctx.accessToken) {
             throw new Error("Unauthorized: Missing access token in context");
         }
-        return {
+
+        const headers = {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${ctx.accessToken}`,
             "x-user-email": ctx.email,
             "x-workspace-id": ctx.workspaceId,
             "x-subdomain": ctx.subdomain
         };
+
+        // If simple Bearer token
+        if (!ctx.isCookie && !ctx.accessToken.includes("=")) {
+            headers["Authorization"] = `Bearer ${ctx.accessToken}`;
+        } else {
+            // It's a cookie string (NextAuth)
+            headers["Cookie"] = ctx.accessToken;
+        }
+
+        return headers;
     }
 
     /**

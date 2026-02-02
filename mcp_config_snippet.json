@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "skarya-mcp": {
+            "command": "node",
+            "args": [
+                "D:\\pro\\recordings\\skarya-mcp\\src\\index.js"
+            ]
+        }
+    }
+}

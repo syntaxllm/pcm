@@ -7,12 +7,9 @@ module.exports = toolRegistry;
 */
 import { registerBoardTools } from "../boards/boards.tools.js";
 import { registerTaskTools } from "../tasks/tasks.tools.js";
-import { requireAuth } from "../middleware/requireAuth.js";
+
 
 export function registerTools(server) {
-  // Global auth middleware
-  server.use(requireAuth);
-
   // Domain-specific tools
   registerBoardTools(server);
   registerTaskTools(server);

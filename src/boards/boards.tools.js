@@ -12,6 +12,10 @@ import {
  * Register Board Tools
  * @param {McpServer} server - The MCP Server instance
  */
+import { withAuth } from "../middleware/requireAuth.js";
+
+// ... schemas ...
+
 export function registerBoardTools(server) {
 
     // Tool: List Boards
@@ -21,11 +25,9 @@ export function registerBoardTools(server) {
             description: "List all boards accessible to the current user in the workspace.",
             inputSchema: ListBoardsSchema
         },
-        async (input, toolCtx) => {
-            // Auth is handled by middleware injecting into ctx, service uses ctx
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.listBoards(ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.listBoards(authCtx);
+        }, input)
     );
 
     // Tool: Create Board
@@ -35,10 +37,9 @@ export function registerBoardTools(server) {
             description: "Create a new board in the workspace.",
             inputSchema: CreateBoardSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.createBoard(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.createBoard(inp, authCtx);
+        }, input)
     );
 
     // Tool: Update Board
@@ -48,10 +49,9 @@ export function registerBoardTools(server) {
             description: "Update an existing board's details (name, visibility, etc).",
             inputSchema: UpdateBoardSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.updateBoard(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.updateBoard(inp, authCtx);
+        }, input)
     );
 
     // Tool: Delete Board
@@ -61,10 +61,9 @@ export function registerBoardTools(server) {
             description: "Delete a board by ID permanently.",
             inputSchema: DeleteBoardSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.deleteBoard(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.deleteBoard(inp, authCtx);
+        }, input)
     );
 
     // Tool: Assign Users
@@ -74,10 +73,9 @@ export function registerBoardTools(server) {
             description: "Assign members to a board using their emails.",
             inputSchema: AssignUsersSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.assignUsers(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.assignUsers(inp, authCtx);
+        }, input)
     );
 
     // Tool: Apply Template
@@ -87,10 +85,9 @@ export function registerBoardTools(server) {
             description: "Create a new board using a specific template.",
             inputSchema: ApplyTemplateSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await boardService.applyTemplate(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.applyTemplate(inp, authCtx);
+        }, input)
     );
 
     // Note: update_statuses was removed as it was not supported by the API capture.

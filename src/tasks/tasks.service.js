@@ -14,13 +14,21 @@ export class TaskService {
         if (!ctx.accessToken) {
             throw new Error("Unauthorized: Missing access token in context");
         }
-        return {
+
+        const headers = {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${ctx.accessToken}`,
             "x-user-email": ctx.email,
             "x-workspace-id": ctx.workspaceId,
             "x-subdomain": ctx.subdomain
         };
+
+        if (!ctx.isCookie && !ctx.accessToken.includes("=")) {
+            headers["Authorization"] = `Bearer ${ctx.accessToken}`;
+        } else {
+            headers["Cookie"] = ctx.accessToken;
+        }
+
+        return headers;
     }
 
     async _request(endpoint, method, body, ctx) {

@@ -9,6 +9,10 @@ import {
  * Register Task Tools
  * @param {McpServer} server - The MCP Server instance
  */
+import { withAuth } from "../middleware/requireAuth.js";
+
+// ...
+
 export function registerTaskTools(server) {
 
     // Tool: List Tasks
@@ -18,10 +22,9 @@ export function registerTaskTools(server) {
             description: "List all tasks within a specific board.",
             inputSchema: ListTasksSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await taskService.listTasks(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await taskService.listTasks(inp, authCtx);
+        }, input)
     );
 
     // Tool: Create Task
@@ -31,10 +34,9 @@ export function registerTaskTools(server) {
             description: "Create a new task on a board.",
             inputSchema: CreateTaskSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await taskService.createTask(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await taskService.createTask(inp, authCtx);
+        }, input)
     );
 
     // Tool: Update Task
@@ -44,9 +46,8 @@ export function registerTaskTools(server) {
             description: "Update a task's details (status, priority, assignee, etc).",
             inputSchema: UpdateTaskSchema
         },
-        async (input, toolCtx) => {
-            const ctx = toolCtx.request?.context || toolCtx;
-            return await taskService.updateTask(input, ctx);
-        }
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await taskService.updateTask(inp, authCtx);
+        }, input)
     );
 }

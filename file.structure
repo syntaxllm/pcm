@@ -1,0 +1,38 @@
+skarya-mcp/
+├── src/
+│   ├── boards/                 # Boards Module
+│   │   ├── boards.schema.js    # JSON Schemas for Board Tools
+│   │   ├── boards.service.js   # Board API Logic (Verified & Inferred)
+│   │   ├── boards.tools.js     # Tool Definitions
+│   │   └── README.md           # Module Docs
+│   │
+│   ├── tasks/                  # Tasks Module [NEW]
+│   │   ├── tasks.schema.js     # JSON Schemas for Task Tools
+│   │   ├── tasks.service.js    # Task API Logic
+│   │   └── tasks.tools.js      # Tool Definitions
+│   │
+│   ├── config/                 # Configuration
+│   │   ├── constants.js        # Global Constants
+│   │   └── env.js              # Environment Variables & Validation
+│   │
+│   ├── mcp/                    # MCP Core
+│   │   ├── contextBuilder.js   # Auth Context Builder
+│   │   └── toolRegistry.js     # Central Tool Regsitry
+│   │
+│   ├── middleware/             # Express Middleware
+│   │   └── requireAuth.js      # Authentication Middleware (Dev Auth Bypass Support)
+│   │
+│   ├── scripts/                # Utility Scripts [NEW]
+│   │   └── setup-auth.js       # CLI Tool for Auto-Auth/Staging Setup
+│   │
+│   ├── utils/                  # Helpers
+│   │   └── logger.js           # Structured Logger
+│   │
+│   └── index.js                # Application Entry Point
+│
+├── .env.example                # Example Environment Variables
+├── .gitignore                  # Git Ignore Rules
+├── claude_mcp_config.json      # Claude Desktop Configuration Snippet
+├── COMPLETION_REPORT.md        # Tasks Module Completion Status
+├── package.json                # Project Dependencies & Scripts
+├── README.md                   # Main Documentation
