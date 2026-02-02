@@ -1,0 +1,75 @@
+I want to build a **(MCP)** integration for our app (Skarya.ai) using **JavaScript only**, focused on **Boards functionality** for now , just this, we will expanpand and add each functionality of our app to the mcp. 
+mcp clients are chatgpt App and claude connectors. Skarya ai app is simlar like the productivity tools : monday.com, asana, clickup.
+
+I have captured the backend API calls for boards in this JSON file (boards-api-capture.json). It includes: 
+- List boards
+- Create board
+- Update board
+- Delete board
+- Assign users
+- Apply templates
+- Change status/visibility
+
+Requirements for the MCP:
+
+1. **Structure**:
+   - Create a folder/module: `boards/`
+   - Files:
+     - `boards.tools.js` → MCP tools definitions for LLM
+     - `boards.service.js` → JS functions calling Skarya backend APIs
+     - `boards.schema.js` → Input/output JSON schemas for LLM
+   - Each tool must define:
+     - Name
+     - Input JSON
+     - Output JSON
+     - Authorization requirements
+     - Error handling
+
+2. **Authentication**:
+   - Skarya uses **subdomain + NextAuth session token**.
+   - Each request must include `subdomain`, `workspaceId`, `accountId`, and `email`.
+   - LLM tools must not receive raw session token — MCP injects token dynamically.
+   - Consider **short-lived token** for each LLM request.
+
+3. **Payloads**:
+   - Extract request and response payloads from `boards-api-capture.json`
+   - Convert them into **JS function parameters** and **return objects**
+   - Include only fields necessary for LLM to operate safely
+
+4. **MCP Tool Design**:
+   - `list_boards`
+   - `create_board`
+   - `update_board`
+   - `delete_board`
+   - `assign_users`
+   - `apply_template`
+   - `update_statuses`
+   - Each tool must be callable from LLM and return JSON
+
+5. **Error Handling**:
+   - Include API status code checks
+   - Return meaningful errors to MCP client (LLM)
+
+6. **Tenant Isolation**:
+   - Each request must include subdomain/workspaceId to enforce isolation
+   - Validate the token per subdomain
+
+7. **Code Style**:
+   - Use modern JS (ES6+)
+   - Async/await for API calls
+   - Minimal, clean, readable, production-ready
+
+8. **Extra**:
+   - Comment each tool function clearly
+   - Mention which fields come from auth vs LLM
+   - Highlight default templates or board IDs
+
+---
+
+Now, generate **full JavaScript files** according to this structure, fully usable as MCP tools. Focus on **Boards-only** for now. 
+
+Output:
+- `boards.tools.js`
+- `boards.service.js`
+- `boards.schema.js`
+- Include comments explaining auth, subdomain, and short-lived token usage.

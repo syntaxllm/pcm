@@ -1,0 +1,2216 @@
+[
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardByUser?workspaceId=696734adc13caf5641a70aac&email=pranav.patil@nikqik.com&subdomain=prnav&workspaceName=Home&accountId=4966",
+    "method": "GET",
+    "requestHeaders": {
+      "Content-Type": "application/json",
+      "x-user-email": "pranav.patil@nikqik.com",
+      "Cache-Control": "max-age=300"
+    },
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "_id": "697c230e0e6f6955004a5a55",
+          "boardName": "sample",
+          "visibility": "Public",
+          "owners": [
+            "pranav.patil@nikqik.com"
+          ],
+          "createdBy": "pranav.patil@nikqik.com",
+          "users": [
+            "pranav.patil@nikqik.com"
+          ],
+          "userGroups": [],
+          "isDefault": false,
+          "pinnedBy": [],
+          "createdAt": "2026-01-30T03:18:38.619Z",
+          "updatedAt": "2026-01-30T03:18:38.734Z",
+          "boardEmail": "sample@prnav.skarya.ai",
+          "groupData": [],
+          "taskCount": 0
+        },
+        {
+          "_id": "696759bdc13caf5641a7659b",
+          "boardName": "New",
+          "visibility": "Public",
+          "owners": [
+            "pranav.patil@nikqik.com"
+          ],
+          "createdBy": "pranav.patil@nikqik.com",
+          "users": [
+            "pranav.patil@nikqik.com"
+          ],
+          "userGroups": [],
+          "isDefault": false,
+          "pinnedBy": [],
+          "createdAt": "2026-01-14T08:54:21.128Z",
+          "updatedAt": "2026-01-14T08:54:21.183Z",
+          "boardEmail": "new@prnav.skarya.ai",
+          "groupData": [],
+          "taskCount": 0
+        }
+      ],
+      "cached": true,
+      "timestamp": "2026-02-01T18:59:13.974Z"
+    },
+    "time": "2026-02-01T18:59:14.046Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T18:59:19.049Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T18:59:19.049Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T18:59:19.169Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T18:59:19.220Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T18:59:19.308Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T18:59:19.308Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:00:32.595Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:03.075Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:04.837Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:16.817Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:17.114Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:17.114Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:17.115Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:21.411Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:21.547Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:21.547Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:21.548Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:23.217Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:23.322Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:23.322Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:23.322Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:25.164Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:25.164Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:25.214Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boardSubtask/getBoardAllSubtask?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": []
+    },
+    "time": "2026-02-01T19:01:25.397Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:25.547Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T19:00:32.390Z",
+          "dailyPlannerDueDate": "2026-02-01T20:00:32.390Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:00:32.392Z",
+          "__v": 0
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:01:28.718Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:28.959Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:28.959Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:01:28.959Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtask/getBoardSubtask?boardId=697c230e0e6f6955004a5a55&taskId=697fa2d00e6f6955004adcb4&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": []
+    },
+    "time": "2026-02-01T19:01:53.015Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtask/createBoardSubtask?boardId=697c230e0e6f6955004a5a55&taskId=697fa2d00e6f6955004adcb4&workspaceId=696734adc13caf5641a70aac",
+    "method": "POST",
+    "requestBody": "{\"name\":\"subtask sample\",\"status\":\"To Do\",\"priority\":\"Low\",\"assignee\":\"\",\"startDate\":\"2026-02-01T19:02:07.024Z\",\"dueDate\":\"2026-02-02T19:02:07.024Z\"}",
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "workspaceId": "696734adc13caf5641a70aac",
+        "boardId": "697c230e0e6f6955004a5a55",
+        "taskId": "697fa2d00e6f6955004adcb4",
+        "subtaskNumber": "BST0001",
+        "name": "subtask sample",
+        "startDate": "2026-02-01T19:02:07.024Z",
+        "dueDate": "2026-02-02T19:02:07.024Z",
+        "priority": "Low",
+        "status": "To Do",
+        "createdBy": "pranav.patil@nikqik.com",
+        "_id": "697fa32f0e6f6955004adef6",
+        "checklist": [],
+        "__v": 0,
+        "parentBoardName": "sample",
+        "parentTaskName": "sample task",
+        "parentTaskNumber": "BT0001",
+        "parentTaskAssignee": "pranav.patil@nikqik.com",
+        "parentTaskAssigneeName": "Pranav Patil",
+        "parentTaskCreatedBy": "pranav.patil@nikqik.com"
+      }
+    },
+    "time": "2026-02-01T19:02:07.083Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtaskComment/getBoardSubtaskComment?boardId=697c230e0e6f6955004a5a55&taskId=697fa2d00e6f6955004adcb4&subtaskId=697fa32f0e6f6955004adef6&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 404,
+    "response": {
+      "success": false,
+      "message": "Comments not found"
+    },
+    "time": "2026-02-01T19:02:11.792Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T08:00:00.000Z",
+          "dailyPlannerDueDate": "2026-02-01T09:00:00.000Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            },
+            {
+              "text": "item 2",
+              "completed": false,
+              "_id": "697fa3151d8eb4dba9126ecf"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:01:47.892Z",
+          "__v": 1
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:02:11.826Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getFilterBoard?boardId=697c230e0e6f6955004a5a55&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "assigneeGroup": null,
+          "_id": "697fa2d00e6f6955004adcb4",
+          "workspaceId": {
+            "_id": "696734adc13caf5641a70aac",
+            "accountId": "4966",
+            "subdomain": "prnav",
+            "name": "Home",
+            "groups": [],
+            "visibility": "Public",
+            "template": false,
+            "createdBy": "pranav.patil@nikqik.com",
+            "createdDate": "2026-01-14T06:16:13.631Z",
+            "projectCounter": 0,
+            "taskCounter": 0,
+            "newAccount": false,
+            "teamMembers": [],
+            "owners": [],
+            "updatedAt": "2026-01-14T06:16:13.674Z",
+            "__v": 0,
+            "onboardingCompletedAt": "2026-01-14T06:19:23.255Z"
+          },
+          "boardId": {
+            "_id": "697c230e0e6f6955004a5a55",
+            "accountId": "4966",
+            "workspaceId": "696734adc13caf5641a70aac",
+            "email": "pranav.patil@nikqik.com",
+            "subdomain": "prnav",
+            "boardName": "sample",
+            "visibility": "Public",
+            "owners": [
+              "pranav.patil@nikqik.com"
+            ],
+            "createdBy": "pranav.patil@nikqik.com",
+            "users": [
+              "pranav.patil@nikqik.com"
+            ],
+            "userGroups": [],
+            "taskCounter": 0,
+            "isDefault": false,
+            "pinnedBy": [],
+            "createdAt": "2026-01-30T03:18:38.619Z",
+            "updatedAt": "2026-01-30T03:18:38.734Z",
+            "__v": 0,
+            "boardEmail": "sample@prnav.skarya.ai"
+          },
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "percentageCompletion": 0,
+          "startDate": "2026-02-01T18:59:23.807Z",
+          "dueDate": "2026-02-05T18:59:23.807Z",
+          "dailyPlannerStartDate": "2026-02-01T08:00:00.000Z",
+          "dailyPlannerDueDate": "2026-02-01T09:00:00.000Z",
+          "priority": "High",
+          "type": "Task",
+          "createdBy": "pranav.patil@nikqik.com",
+          "status": "To Do",
+          "statusCategory": "not_started",
+          "dependency": [],
+          "relation": [],
+          "collaborators": [],
+          "allocatedEffort": "",
+          "actualEffort": "",
+          "description": "",
+          "label": "Technical Debt",
+          "milestone": false,
+          "checklists": [
+            {
+              "text": "item 1",
+              "completed": false,
+              "_id": "697fa2c11d8eb4dba9126ece"
+            },
+            {
+              "text": "item 2",
+              "completed": false,
+              "_id": "697fa3151d8eb4dba9126ecf"
+            }
+          ],
+          "customFieldValues": {
+            "697c230e0e6f6955004a5a7f": "Sprint 1"
+          },
+          "createdVia": "manual",
+          "order": 0,
+          "createdAt": "2026-02-01T19:00:32.392Z",
+          "updatedAt": "2026-02-01T19:01:47.892Z",
+          "__v": 1
+        }
+      ],
+      "emails": [
+        "pranav.patil@nikqik.com"
+      ],
+      "users": [
+        {
+          "name": "Pranav Patil",
+          "email": "pranav.patil@nikqik.com"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:02:11.832Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtask/getBoardSubtask?boardId=697c230e0e6f6955004a5a55&taskId=697fa2d00e6f6955004adcb4&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "_id": "697fa32f0e6f6955004adef6",
+          "workspaceId": "696734adc13caf5641a70aac",
+          "boardId": "697c230e0e6f6955004a5a55",
+          "taskId": "697fa2d00e6f6955004adcb4",
+          "subtaskNumber": "BST0001",
+          "name": "subtask sample",
+          "startDate": "2026-02-01T19:02:07.024Z",
+          "dueDate": "2026-02-02T19:02:07.024Z",
+          "priority": "Low",
+          "status": "To Do",
+          "createdBy": "pranav.patil@nikqik.com",
+          "checklist": [],
+          "__v": 0
+        }
+      ]
+    },
+    "time": "2026-02-01T19:02:12.082Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:12.119Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:12.119Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:12.119Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtask/updateBoardSubtask?id=697fa32f0e6f6955004adef6",
+    "method": "PUT",
+    "requestBody": "{\"workspaceId\":\"696734adc13caf5641a70aac\",\"boardId\":\"697c230e0e6f6955004a5a55\",\"taskId\":\"697fa2d00e6f6955004adcb4\",\"subtaskNumber\":\"BST0001\",\"name\":\"subtask sample\",\"startDate\":\"2026-02-01T19:02:07.024Z\",\"dueDate\":\"2026-02-03T19:02:07.024Z\",\"priority\":\"Medium\",\"status\":\"In Progress\",\"createdBy\":\"pranav.patil@nikqik.com\",\"_id\":\"697fa32f0e6f6955004adef6\",\"checklist\":[],\"__v\":0,\"parentBoardName\":\"sample\",\"parentTaskName\":\"sample task\",\"parentTaskNumber\":\"BT0001\",\"parentTaskAssignee\":\"pranav.patil@nikqik.com\",\"parentTaskAssigneeName\":\"Pranav Patil\",\"parentTaskCreatedBy\":\"pranav.patil@nikqik.com\",\"allocatedEffort\":\"5 hours\",\"actualEffort\":\"3 hours\",\"assignee\":{\"email\":\"pranav.patil@nikqik.com\",\"name\":\"Pranav Patil\"},\"description\":\"yes description\"}",
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697fa32f0e6f6955004adef6",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "boardId": {
+          "_id": "697c230e0e6f6955004a5a55",
+          "boardName": "sample"
+        },
+        "taskId": {
+          "_id": "697fa2d00e6f6955004adcb4",
+          "taskNumber": "BT0001",
+          "name": "sample task",
+          "assigneePrimary": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "createdBy": "pranav.patil@nikqik.com"
+        },
+        "subtaskNumber": "BST0001",
+        "name": "subtask sample",
+        "startDate": "2026-02-01T19:02:07.024Z",
+        "dueDate": "2026-02-03T19:02:07.024Z",
+        "priority": "Medium",
+        "status": "In Progress",
+        "createdBy": "pranav.patil@nikqik.com",
+        "checklist": [],
+        "__v": 0,
+        "actualEffort": "3 hours",
+        "allocatedEffort": "5 hours",
+        "assignee": {
+          "email": "pranav.patil@nikqik.com",
+          "name": "Pranav Patil"
+        },
+        "description": "yes description"
+      }
+    },
+    "time": "2026-02-01T19:02:55.848Z"
+  },
+  {
+    "type": "xhr",
+    "url": "/api/boardSubtask/getBoardSubtask?boardId=697c230e0e6f6955004a5a55&taskId=697fa2d00e6f6955004adcb4&workspaceId=696734adc13caf5641a70aac",
+    "method": "GET",
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "assignee": {
+            "email": "pranav.patil@nikqik.com",
+            "name": "Pranav Patil"
+          },
+          "_id": "697fa32f0e6f6955004adef6",
+          "workspaceId": "696734adc13caf5641a70aac",
+          "boardId": "697c230e0e6f6955004a5a55",
+          "taskId": "697fa2d00e6f6955004adcb4",
+          "subtaskNumber": "BST0001",
+          "name": "subtask sample",
+          "startDate": "2026-02-01T19:02:07.024Z",
+          "dueDate": "2026-02-03T19:02:07.024Z",
+          "priority": "Medium",
+          "status": "In Progress",
+          "createdBy": "pranav.patil@nikqik.com",
+          "checklist": [],
+          "__v": 0,
+          "actualEffort": "3 hours",
+          "allocatedEffort": "5 hours",
+          "description": "yes description"
+        }
+      ]
+    },
+    "time": "2026-02-01T19:02:56.483Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/board?id=697c230e0e6f6955004a5a55",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:56.490Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:56.490Z"
+  },
+  {
+    "type": "fetch",
+    "url": "/api/boards/getBoardById&Access?id=697c230e0e6f6955004a5a55&email=pranav.patil@nikqik.com",
+    "method": "GET",
+    "requestHeaders": {},
+    "requestBody": null,
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "_id": "697c230e0e6f6955004a5a55",
+        "accountId": "4966",
+        "workspaceId": "696734adc13caf5641a70aac",
+        "email": "pranav.patil@nikqik.com",
+        "subdomain": "prnav",
+        "boardName": "sample",
+        "visibility": "Public",
+        "owners": [
+          "pranav.patil@nikqik.com"
+        ],
+        "createdBy": "pranav.patil@nikqik.com",
+        "users": [
+          "pranav.patil@nikqik.com"
+        ],
+        "userGroups": [],
+        "taskCounter": 0,
+        "isDefault": false,
+        "pinnedBy": [],
+        "createdAt": "2026-01-30T03:18:38.619Z",
+        "updatedAt": "2026-01-30T03:18:38.734Z",
+        "__v": 0,
+        "boardEmail": "sample@prnav.skarya.ai"
+      }
+    },
+    "time": "2026-02-01T19:02:56.490Z"
+  }
+]

@@ -1,0 +1,16 @@
+node_modules/
+.env
+.DS_Store
+dist/
+coverage/
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.agent/
+REPORT.md
+
+tickets.md
