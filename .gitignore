@@ -12,5 +12,5 @@ yarn-error.log*
 
 .agent/
 REPORT.md
-
+COMPLETION_REPORT.md
 tickets.md

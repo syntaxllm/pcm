@@ -5,12 +5,14 @@ This is the Model Context Protocol (MCP) server integration for Skarya.ai, enabl
 ## Features
 
 - **Boards Management**: List, create, update, and manage boards.
+- **Tasks Management**: List, create, and update tasks within boards.
 - **Tenant Isolation**: Fully supports Skarya's multi-tenant architecture with subdomain and workspace isolation.
 - **Secure Auth**: Uses session-based authentication injection for safe LLM interaction.
 
 ## Modules
 
 - **`src/boards/`**: Core logic for Board operations (Tools, Service, Schema).
+- **`src/tasks/`**: Core logic for Task operations.
 - **`src/mcp/`**: MCP server configuration and tool registry.
 
 ## Getting Started
