@@ -14,3 +14,4 @@ yarn-error.log*
 REPORT.md
 COMPLETION_REPORT.md
 tickets.md
+logs/

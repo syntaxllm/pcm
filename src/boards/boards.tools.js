@@ -5,7 +5,9 @@ import {
     UpdateBoardSchema,
     DeleteBoardSchema,
     AssignUsersSchema,
-    ApplyTemplateSchema
+    ApplyTemplateSchema,
+    GetBoardSchema,
+    GetAssigneesSchema
 } from "./boards.schema.js";
 
 /**
@@ -27,6 +29,30 @@ export function registerBoardTools(server) {
         },
         async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
             return await boardService.listBoards(authCtx);
+        }, input)
+    );
+
+    // Tool: Get Board
+    server.tool(
+        "get_board",
+        {
+            description: "Get detailed information about a specific board.",
+            inputSchema: GetBoardSchema
+        },
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.getBoard(inp, authCtx);
+        }, input)
+    );
+
+    // Tool: Get Assignees
+    server.tool(
+        "get_assignees",
+        {
+            description: "Get a list of potential assignees (users) for the workspace.",
+            inputSchema: GetAssigneesSchema
+        },
+        async (input, toolCtx) => withAuth(toolCtx, async (inp, authCtx) => {
+            return await boardService.getAssignees(authCtx);
         }, input)
     );
 

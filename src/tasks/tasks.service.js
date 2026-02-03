@@ -35,6 +35,8 @@ export class TaskService {
         const url = `${this.baseUrl}${endpoint}`;
         const headers = this._getHeaders(ctx);
 
+        log("API_REQUEST", { method, endpoint, body }); // <--- Added Body Log
+
         try {
             const response = await fetch(url, {
                 method,
@@ -43,6 +45,8 @@ export class TaskService {
             });
 
             const data = await response.json();
+
+            log("API_RESPONSE", { endpoint, status: response.status, data }); // <--- Added Response Log
 
             if (!response.ok || (data.hasOwnProperty('success') && !data.success)) {
                 throw new Error(`API Error ${response.status}: ${data.message || response.statusText}`);
@@ -60,41 +64,52 @@ export class TaskService {
      * Verified Endpoint: /api/boards/getFilterBoard
      */
     async listTasks(params, ctx) {
-        const query = new URLSearchParams({
-            boardId: params.boardId,
-            workspaceId: ctx.workspaceId
-            // Note: 'getFilterBoard' in capture also returned users/emails, but we focus on data
-        });
+        try {
+            const query = new URLSearchParams({
+                boardId: params.boardId,
+                workspaceId: ctx.workspaceId,
+                accountId: ctx.accountId,
+                subdomain: ctx.subdomain
+            });
 
-        const result = await this._request(`/api/boards/getFilterBoard?${query.toString()}`, "GET", null, ctx);
+            const result = await this._request(`/api/boards/getFilterBoard?${query.toString()}`, "GET", null, ctx);
 
-        if (result.success && Array.isArray(result.data)) {
-            // Filter to only include items that look like tasks (just in case)
-            const tasks = result.data
-                .filter(item => item.type === 'Task') // capture showed "type": "Task"
-                .map(t => ({
-                    id: t._id,
-                    name: t.name,
-                    status: t.status,
-                    priority: t.priority,
-                    assignee: t.assigneePrimary ? { name: t.assigneePrimary.name, email: t.assigneePrimary.email } : null,
-                    dueDate: t.dueDate,
-                    taskNumber: t.taskNumber
-                }));
+            if (result.success && Array.isArray(result.data)) {
+                // Filter to only include items that look like tasks (just in case)
+                // Relaxed filter: include anything with an ID and Name
+                const tasks = result.data
+                    // .filter(item => item.type === 'Task') 
+                    .map(t => ({
+                        id: t._id,
+                        name: t.name,
+                        status: t.status,
+                        statusCategory: t.statusCategory,
+                        priority: t.priority,
+                        assignee: t.assigneePrimary ? { name: t.assigneePrimary.name, email: t.assigneePrimary.email } : null,
+                        dueDate: t.dueDate,
+                        startDate: t.startDate,
+                        description: t.description,
+                        label: t.label,
+                        checklists: t.checklists,
+                        customFields: t.customFieldValues,
+                        taskNumber: t.taskNumber
+                    }));
 
+                return {
+                    content: [{
+                        type: "text",
+                        text: JSON.stringify(tasks, null, 2)
+                    }]
+                };
+            }
+            return { content: [{ type: "text", text: "[]" }] };
+        } catch (err) {
+            console.error("Error listing tasks:", err);
             return {
-                content: [{
-                    type: "text",
-                    text: JSON.stringify(tasks, null, 2)
-                }]
+                content: [{ type: "text", text: `Error listing tasks: ${err.message}` }],
+                isError: true
             };
         }
-        return {
-            content: [{
-                type: "text",
-                text: "[]"
-            }]
-        };
     }
 
     /**
@@ -109,11 +124,15 @@ export class TaskService {
             status: params.status || "To Do",
             priority: params.priority || "Medium",
             workspaceId: ctx.workspaceId,
+            email: ctx.email, // Added
             createdBy: ctx.email,
             subdomain: ctx.subdomain,
             accountId: ctx.accountId,
             assignee: params.assigneeEmail ? { email: params.assigneeEmail } : null,
-            dueDate: params.dueDate
+            dueDate: params.dueDate,
+            type: "Task",
+            isPrivate: false,
+            order: 0
         };
 
         const result = await this._request("/api/tasks/createTask", "POST", payload, ctx);
@@ -143,11 +162,13 @@ export class TaskService {
             priority: params.priority,
             dueDate: params.dueDate,
             workspaceId: ctx.workspaceId,
+            accountId: ctx.accountId,
+            subdomain: ctx.subdomain,
             updatedBy: ctx.email,
             assignee: params.assigneeEmail ? { email: params.assigneeEmail } : undefined
         };
 
-        // Remove undefined keys to avoid sending nulls for unchanged fields
+        // Remove undefined keys
         Object.keys(payload).forEach(key => payload[key] === undefined && delete payload[key]);
 
         await this._request("/api/tasks/updateTask", "PUT", payload, ctx);

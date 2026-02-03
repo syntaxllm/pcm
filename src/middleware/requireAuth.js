@@ -24,6 +24,7 @@ export async function withAuth(toolCtx, handler, input) {
         workspaceId: process.env.DEV_WORKSPACE_ID,
         subdomain: process.env.DEV_SUBDOMAIN,
         email: process.env.DEV_EMAIL,
+        accountId: process.env.DEV_ACCOUNT_ID, // Added
         isCookie: isCookie
       };
     } else {

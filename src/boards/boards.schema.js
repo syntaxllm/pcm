@@ -17,6 +17,27 @@ export const ListBoardsSchema = {
 };
 
 /**
+ * Get Board
+ */
+export const GetBoardSchema = {
+    type: "object",
+    properties: {
+        boardId: { type: "string", description: "The ID of the board to retrieve" }
+    },
+    required: ["boardId"]
+};
+
+/**
+ * Get Assignees
+ * No params needed as it uses workspaceId from context
+ */
+export const GetAssigneesSchema = {
+    type: "object",
+    properties: {},
+    required: []
+};
+
+/**
  * Create Board
  * Removed folderId, as it does not appear in valid capture payloads.
  */
